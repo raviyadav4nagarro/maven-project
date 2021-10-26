@@ -6,3 +6,5 @@ LABEL app=maven-project-demo
 MAINTAINER Ravi_Yadav <ravi.yadav02@nagarro.com>
 # copy the war file form source to target location 
 COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+# cmd to run on default tomcat server
+CMD ["catalina.sh", "run"]
